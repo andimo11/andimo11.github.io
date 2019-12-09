@@ -7,9 +7,19 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1 {font-family: Lucida, Geneva, sans-serif}
+body,h1 {
+    font-family: Lucida, Geneva, sans-serif
+    font-weight: bold;
+}
 h1 {letter-spacing: 6px}
 .w3-row-padding img {margin-bottom: 12px}
+.rotateimg90 {
+  -webkit-transform:rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
 </style>
 <body>
 
@@ -17,7 +27,7 @@ h1 {letter-spacing: 6px}
 <div class="w3-content" style="max-width:1500px">
 
 <!-- Header -->
-<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+<header class="w3-panel w3-center" style="padding:128px 16px">
     <h1 class="w3-xlarge">Alexander N.</h1>
   <h1>Dimopoulos</h1>
   <p class="w3-opacity"><i>Adventurer, Student, and Technologist</i></p>
@@ -26,8 +36,8 @@ h1 {letter-spacing: 6px}
     <div class="w3-bar w3-border">
       <a href="#" class="w3-bar-item w3-button">Home</a>
       <a href="#portfolio" class="w3-bar-item w3-button w3-light-grey">Portfolio</a>
-      <a href="#" class="w3-bar-item w3-button">Contact</a>
       <a href="#bio" class="w3-bar-item w3-button w3-hide-small">About Me</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
   </div>
 </header>
@@ -72,25 +82,15 @@ h1 {letter-spacing: 6px}
 
 
 <!-- Bio -->
-<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="bio">
-  <h2 class="w3-wide">About Me</h2>
-  <p class="w3-opacity"><i>Adamant about my goals, flexible about my methods</i></p>
-  <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row w3-padding-32">
-    <div class="w3-third">
-      <p>Name</p>
-      <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+<div class="w3-container w3-content w3-row w3-padding-64" style="max-width:1200px" id="bio">
+    <div class="w3-half">
+        <h2 class="w3-wide">About Me</h2>
+            <p class="w3-opacity"><i>Adamant about my goals, flexible about my methods</i></p>
+            <p class="w3-justify">I aim to have an impact which not only greatly imporoves the lives of those around me but also reaches many people across the globe, and I know in order to achieve this technology will be the key.<br>This mission, along with my love for math brought me to UC San Diego's Math/Computer Science program in 2019. Once there I learned of a new a fascinating department, the first of which had been founded on the very campus, Cognitive Science. With a specialization in Machine Learning I had the ability to focus more of my courses towards ML AND to learn about data science, technology design, and human computer interaction. This balance allows me to learn the technical aspect of my product, which giving me the insight to design my vision in a form which makes it accessible to all users.<br>Currently I am a member of the Triton RoboSub's Software/Machine Learning team and am working towards contributing to NASA Jet Propulsion's CoSTAR's entry for the DARPA Subterrainian Challenge.<br>On my free time I love to cook, read, and practice Jiu Jitsu.</p>
     </div>
-    <div class="w3-third">
-      <p>Name</p>
-      <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-    </div>
-    <div class="w3-third">
-      <p>Name</p>
-      <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-    </div>
+    <div class="w3-half w3-padding-32">
+        <div class="w3-center">
+            <img src="images/webPortImg.jpg" class="rotateimg90" alt="Random Name" style="width:75%">
   </div>
 </div>
   
@@ -98,14 +98,13 @@ h1 {letter-spacing: 6px}
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  
-  <p>Made by Alexander N. Dimopoulos</p>
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large" id="contact">
+    <i class="fa fa-linkedin w3-hover-opacity" onclick="window.open( 'https://www.linkedin.com/in/alexander-dimopoulos-6370a4148/','_blank')"> </i>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <p>Made by Alexander N. Dimopoulos</p>
 </footer>
 
 </body>
