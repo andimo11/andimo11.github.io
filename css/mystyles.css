@@ -1,0 +1,16 @@
+body,h1 {
+    font-family: Lucida, Geneva, sans-serif;
+    font-weight: bold;
+}
+h1 {
+    letter-spacing: 6px
+}
+
+.w3-row-padding img {margin-bottom: 12px}
+.rotateimg90 {
+  -webkit-transform:rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
