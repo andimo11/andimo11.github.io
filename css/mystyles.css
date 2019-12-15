@@ -3,7 +3,9 @@ body,h1 {
     font-weight: bold;
 }
 h1 {
-    letter-spacing: 6px
+  color: white;
+  text-shadow: -4px 2px black;
+  letter-spacing: 6px;
 }
 
 .w3-row-padding img {margin-bottom: 12px}
