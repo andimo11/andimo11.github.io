@@ -3,9 +3,27 @@ body,h1 {
     font-weight: bold;
 }
 h1 {
-  color: white;
-  text-shadow: -4px 2px black;
+  color: black;
   letter-spacing: 6px;
+}
+
+h2 {
+  color: black;
+  letter-spacing: 6px;
+  font-weight: 900;
+}
+
+b.thicc {
+  font-weight: 2400;
+  font-size: 120px;
+}
+
+body {
+  background-image: url(../images/geoBackground.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-attachment: fixed;
+
 }
 
 .w3-row-padding img {margin-bottom: 12px}
@@ -15,4 +33,8 @@ h1 {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+
+div.bio {
+  background-color:white;
 }
